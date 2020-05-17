@@ -34,8 +34,20 @@ main {
     text-align: center;
     position: absolute;
     bottom: 40px;
-    margin: 0px 0px;
+    margin: 20px 0px;
     width: 100%;
+    position: relative;
+}
+
+p span {
+    overflow: hidden;
+    display: inline-block;
+    animation-name: loading-dots;
+    animation-duration: 2s;
+    position: absolute;
+    bottom: 0px;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4, end);
 }
 
 .content svg {
@@ -70,6 +82,12 @@ main {
     from{transform: translateX(-320px)}
     to {transform: translateX(340px)}
 }
+
+@keyframes loading-dots {
+    from{width: 0px;}
+    to {width:37px;}
+}
+
 
 
 
