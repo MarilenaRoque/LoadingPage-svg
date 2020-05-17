@@ -20,6 +20,7 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+    overflow: hidden;
 }
 
 .content{
@@ -41,6 +42,14 @@ main {
     width: 450px;
     height: 450px;
     margin: auto;
+    overflow: visible;
+}
+
+#clouds {
+    animation-name: running-clouds;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 #sun{
@@ -57,7 +66,10 @@ main {
     to {transform: rotate(360deg);}
 }
 
-
+@keyframes running-clouds{
+    from{transform: translateX(-320px)}
+    to {transform: translateX(340px)}
+}
 
 
 
