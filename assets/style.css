@@ -22,9 +22,6 @@ main {
     border-radius: 15px;
 }
 
-
-
-
 .content{
     display: inline-block;
     margin: auto auto;
@@ -40,11 +37,27 @@ main {
     width: 100%;
 }
 
-.nature-svg {
+.content svg {
     width: 450px;
     height: 450px;
     margin: auto;
 }
+
+#sun{
+    animation-name: rotate;
+    animation-duration: 6s;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
 
 
 
