@@ -21,6 +21,7 @@ main {
     justify-content: center;
     border-radius: 15px;
     overflow: hidden;
+    position: relative;
 }
 
 .content{
@@ -72,6 +73,30 @@ p span {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
+#sad-monkey {
+    position: absolute;
+    top: -10000px;
+    width: 70px;
+}
+
+#happy-monkey {
+    width: 70px;
+    position: absolute;
+    bottom: 142px;
+
+}
+
+/*  Possible position
+Y:  bottom: 142px;
+    bottom: 171px;
+    bottom: 228px; 
+
+X: left: 62px---420px;
+    left: 120px---364px;
+    left: 145px---336px;
+    left: 176px---312px; */
+
 
 @keyframes rotate {
     from {transform: rotate(0deg);}
