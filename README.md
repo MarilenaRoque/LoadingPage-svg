@@ -1,6 +1,6 @@
 # Funny Idea for a Loading Page
 
-> This is an original project that consists in a fun loading page, that is also a game that you can play while waiting. 
+> This is an original project that consists in a fun loading page, that is also a game that you can play while waiting. It was developed using Javascript, HTML, SVGs and CSS animations. 
 
 ![screenshot](./assets/screencapture.png)
 
